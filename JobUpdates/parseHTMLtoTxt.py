@@ -38,6 +38,3 @@ def extract_company_names(html_file):
             f.write(f"{item['company']} | {item['location']}\n")
 
     print(f"{len(extracted_data)} records saved to {txt_path}")
-
-if __name__ == "__main__":
-    extract_company_names("actual_job_results.html")
